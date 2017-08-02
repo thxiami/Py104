@@ -1,12 +1,12 @@
 # Summary
-## 1 回顾练习过程：
+## 1 回顾练习过程
 
 一年前接触 Python 时就从《笨方法学python》这本书开始，但是仅做了前面20个习题，之后就开始用 python 作数据处理和一些小的项目，在实际项目的过程中又学习并使用了类这个概念。所以在这次入学挑战中，跟着作者把代码敲下来这个过程整体都比较顺畅。在这次的练习过程中，会多一些思考，也发现了书中其中自己发现且稍加挖掘的地方有3个：
 
 
 ## 2 复盘解题过程
 
-###2.1 发现问题
+### 2.1 发现问题
 在完成加分习题时，使用 help 看 list 的帮助文档时发现
 浅拷贝(shallow copy)这个名词。关于浅拷贝和深拷贝，以前听说过但一直未探究，这次又碰到所以就想深入了解一下。
 ```
@@ -14,11 +14,11 @@
      L.copy() -> list -- a shallow copy of L
 ```
 
-###2.2 探索问题
+### 2.2 探索问题
 - 为何有浅拷贝和深拷贝？
 - 二者的含义和区别，从区别入手加强对各自含义的理解
 
-###2.3 解决问题
+### 2.3 解决问题
 查阅 Python 文档，二者只有在对复杂对象的拷贝时有差异。
 > The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances):
 
@@ -124,11 +124,11 @@ print "after change, id(cop2[2])", id(cop2[2])     # 68446344
 ```
 写下以上文字的过程也不断加深我对于浅拷贝和深拷贝的理解，但是表述还是有很多不是很清楚的地方，如果加上图片，在理解元素与内存地址的映射关系这部分就会直观一些。可以翻阅参考文献，会有更详细的解答。
 
-###3 全时长
+### 3 全时长
 - 探索和解决问题: 3.5h
 - 写文档：2h
 
-###4 参考文献
+### 4 参考文献
 - [Python documention-8.10 copy-Shallow and deep copy operations](https://docs.python.org/3.4/library/copy.html#module-copy)
 - [Python中 copy, deepcopy 的区别及原因](https://iaman.actor/blog/2016/04/17/copy-in-python)
 - [Python3 - Tutorial Shallow and Deep Copy](http://www.python-course.eu/python3_deep_copy.php)
